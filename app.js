@@ -143,7 +143,7 @@ var showTeam = eligibleteams[0];
 console.log(showTeam);
 console.log(showTeam[0].Name);
 
-var posArray = ["QB1", "RB1", "RB2", "WR1", "WR2", "WR3", "TE", "K", "DEF"];
+var posArray = ["QB", "RB1", "RB2", "WR1", "WR2", "WR3", "TE", "K", "DEF"];
 
 $(document).ready(function() {
     
@@ -158,3 +158,4 @@ $(document).ready(function() {
     var $tot = $('<h2>').text("Team Projected: " + showTeam.potential);
     var $sal = $('<h2>').text("Team Salary: $" + showTeam.salary);
     $('.totals').append('<hr />').append($tot).append($sal);
+});
