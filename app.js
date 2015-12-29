@@ -131,7 +131,7 @@ potentialteams.forEach(function(team, index) {
         teamPotential += pos.ProjectedFantasyPoints;
     });
     if (teamSalary < 60000 && teamPotential > 127.11) {
-        team.potential = teamPotential;
+        team.potential = teamPotential.toFixed(1);
         team.salary = teamSalary;
         eligibleteams.push(team);
     }
@@ -155,7 +155,7 @@ $(document).ready(function() {
             .append($('<td>').text(showTeam[i].ProjectedFantasyPoints + " Points"));
     }
     
-    var $tot = $('<h2>').text("Team Projected: " + showTeam.potential);
+    var $tot = $('<h2>').text("Team Projected Points: " + showTeam.potential);
     var $sal = $('<h2>').text("Team Salary: $" + showTeam.salary);
     $('.totals').append('<hr />').append($tot).append($sal);
 });
