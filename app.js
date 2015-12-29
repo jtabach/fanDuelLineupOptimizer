@@ -145,11 +145,6 @@ console.log(showTeam[0].Name);
 
 var posArray = ["QB1", "RB1", "RB2", "WR1", "WR2", "WR3", "TE", "K", "DEF"];
 
-//$users = $('<h3>').text("Users: " + users);
-//$orgs = $('<h3>').text("Organizations: " + orgs);
-//$admins = $('<h3>').text("Admins:" + admins);
-//$shortHandles = $('<h3>').text("Short Handles:" + shortHandles);
-
 $(document).ready(function() {
     
     for (var i = 0; i < 9; i++) {
@@ -163,19 +158,3 @@ $(document).ready(function() {
     var $tot = $('<h2>').text("Team Projected: " + showTeam.potential);
     var $sal = $('<h2>').text("Team Salary: $" + showTeam.salary);
     $('.totals').append('<hr />').append($tot).append($sal);
-    
-//    var $qb = $('<h3>').text("QB:  " + showTeam[0].Name + " Salary $" + showTeam[0].FanDuelSalary + " Projected: " + showTeam[0].ProjectedFantasyPoints);
-//    var $rb1 = $('<h3>').text("RB1:  " + showTeam[1].Name + " Salary $" + showTeam[1].FanDuelSalary + " Projected: " + showTeam[1].ProjectedFantasyPoints);
-//    var $rb2 = $('<h3>').text("RB2:  " + showTeam[2].Name + " Salary $" + showTeam[2].FanDuelSalary + " Projected: " + showTeam[2].ProjectedFantasyPoints);
-//    var $wr1 = $('<h3>').text("WR1:  " + showTeam[3].Name + " Salary $" + showTeam[3].FanDuelSalary + " Projected: " + showTeam[3].ProjectedFantasyPoints);
-//    var $wr2 = $('<h3>').text("WR2:  " + showTeam[4].Name + " Salary $" + showTeam[4].FanDuelSalary + " Projected: " + showTeam[4].ProjectedFantasyPoints);
-//    var $wr3 = $('<h3>').text("WR3:  " + showTeam[5].Name + " Salary $" + showTeam[5].FanDuelSalary + " Projected: " + showTeam[5].ProjectedFantasyPoints);
-//    var $te = $('<h3>').text("TE:   " + showTeam[6].Name + " Salary $" + showTeam[6].FanDuelSalary + " Projected: " + showTeam[6].ProjectedFantasyPoints);
-//    var $k = $('<h3>').text("K:   " + showTeam[7].Name + " Salary $" + showTeam[7].FanDuelSalary + " Projected: " + showTeam[7].ProjectedFantasyPoints);
-//    var $def = $('<h3>').text("DST:  " + showTeam[8].Name + " Salary $" + showTeam[8].FanDuelSalary + " Projected: " + showTeam[8].ProjectedFantasyPoints);
-    var $tot = $('<h2>').text("Team Projected: " + showTeam.potential);
-    var $sal = $('<h2>').text("Team Salary: $" + showTeam.salary); 
-//    $('table').append($qb).append($rb1).append($rb2).append($wr1).append($wr2).append($wr3).append($te).append($k).append($def).append('<hr />').append($tot).append($sal);
-});
-
-// TODO: optimize the append to html and create a more organized table
